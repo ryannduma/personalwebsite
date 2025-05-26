@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ry Nduma</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">
+                <span class="theme-icon">🌙</span>
+            </button>
+            <h1>Ry Nduma</h1>
+            <p class="subtitle">Engineer, researcher, and artist focused on building computational tools that empower humanity.</p>
+        </header>
+
+        <!-- Navigation -->
+        <nav class="nav">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#writing">Writing</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- About Section -->
+        <section id="about" class="content-section">
+            <h2 class="section-title">About</h2>
+            <div class="text-content">
+                <p>I currently work at the <a href="https://github.com/wmd-group" target="_blank">Walsh Materials Design</a> Research Group and study at Imperial College London, but I was born and raised in Nairobi, Kenya.</p>
+                <p>I am actively developing extensive experience in materials informatics, LLMs, computer vision, and autonomous robotics alongside my studies, and I am eager to build and collaborate on projects that accelerate materials discovery through AI and robotics.</p>
+                <p>In my downtime, you'll likely find me hanging out with friends, running, playing Ghost of Tsushima, binging Attack on Titan or immersing myself in a <a href="https://www.goodreads.com/user/show/183086523-ryan-napo" target="_blank">good read</a>.</p>
+                <p>Oh, and I'm also working on improving my Chinese while 한국어 배우기</p>
+            </div>
+        </section>
+
+        <!-- Work Experience -->
+        <section id="work" class="content-section">
+            <h2 class="section-title">Work Experience</h2>
+            <ul class="simple-list">
+                <li>
+                    <div>
+                        <div class="list-title">
+                            <a href="https://wmd-group.github.io/" target="_blank">Walsh Materials Design Group</a>
+                        </div>
+                        <div class="list-description">Student Researcher</div>
+                    </div>
+                    <div class="list-meta">Summer 2024 - Present</div>
+                </li>
+                <li>
+                    <div>
+                        <div class="list-title">
+                            <a href="https://www.linkedin.com/company/imperial-eco-marathon/posts/?feedView=all" target="_blank">Imperial ShellEcoMarathon</a>
+                        </div>
+                        <div class="list-description">Vehicle Mechanics Engineer</div>
+                    </div>
+                    <div class="list-meta">Oct 2023 - Jun 2024</div>
+                </li>
+                <li>
+                    <div>
+                        <div class="list-title">
+                            <a href="https://www.gearbox.co.ke/" target="_blank">Gearbox Kenya</a>
+                        </div>
+                        <div class="list-description">Computer Engineering Intern</div>
+                    </div>
+                    <div class="list-meta">Apr - Aug 2018</div>
+                </li>
+            </ul>
+            <div style="margin-top: 30px;">
+                <a href="https://www.linkedin.com/in/rynduma/" target="_blank">View complete experience →</a>
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section id="projects" class="content-section">
+            <h2 class="section-title">Projects</h2>
+            
+            <!-- Featured Project -->
+            <div class="featured">
+                <div class="featured-badge">Featured</div>
+                <h3 class="project-title">SignSpeak</h3>
+                <p class="project-description">A real-time sign language translator leveraging computer vision, neural networks, and large language models to bridge communication between Deaf/hard-of-hearing individuals and hearing people. Features bidirectional translation, skeletal tracking with MediaPipe, and context-aware LLM processing.</p>
+                <div class="project-tags">
+                    <span class="tag">Computer Vision</span>
+                    <span class="tag">Neural Networks</span>
+                    <span class="tag">LLMs</span>
+                    <span class="tag">OpenCV</span>
+                </div>
+            </div>
+
+            <!-- Other Projects -->
+            <div class="project-grid">
+                <div class="project-item">
+                    <h3 class="project-title">Wordle Solver</h3>
+                    <p class="project-description">Built a small transformer based off learnings from Karpathy's makemore course that learns the statistical patterns and structures of five-letter English words and uses them to solve the wordle in as few tries as possible.</p>
+                    <div class="project-tags">
+                        <span class="tag">Transformers</span>
+                        <span class="tag">NLP</span>
+                    </div>
+                </div>
+
+                <div class="project-item">
+                    <h3 class="project-title">MARINA AI</h3>
+                    <p class="project-description">A chatbot built on Tensorflow back in 2018 for submission in the <a href="https://www.googlesciencefair.com/projects/2018/aa8d9f0a2a1487037d9d7b558f149912d43d8278e2da3876b6ee758a0cfc9f09" target="_blank">Google Science Fair</a> that would serve as a proof of concept for using AI agents with VR to help those dealing with depression.</p>
+                    <div class="project-tags">
+                        <span class="tag">TensorFlow</span>
+                        <span class="tag">Chatbot</span>
+                        <span class="tag">VR</span>
+                    </div>
+                </div>
+
+                <div class="project-item">
+                    <h3 class="project-title">Minesweeper AI</h3>
+                    <p class="project-description">Using learnings from CS50 AI course, I built a minesweeper game that relies on knowledge engineering and has an agent safely navigate a minesweeper game without tripping a mine.</p>
+                    <div class="project-tags">
+                        <span class="tag">Knowledge Engineering</span>
+                        <span class="tag">Game AI</span>
+                    </div>
+                </div>
+
+                <div class="project-item">
+                    <h3 class="project-title">Unbeatable Tic-Tac-Toe</h3>
+                    <p class="project-description">Built an AI agent that uses a minimax algorithm to find the most optimal counter to the move made by the player while optimising for its worst case (a tie - no losses!).</p>
+                    <div class="project-tags">
+                        <span class="tag">Minimax</span>
+                        <span class="tag">Game Theory</span>
+                        <span class="tag">Python</span>
+                    </div>
+                </div>
+            </div>
+
+            <div style="margin-top: 40px; padding: 20px; background: var(--featured-bg); border: 1px solid var(--border-color); border-radius: 6px; text-align: center;">
+                <p style="color: var(--text-light); font-style: italic; margin-bottom: 15px;">I swear the list of side projects keeps growing by the days - some are still in the pipeline being built (in hidden repos for now) but here are some I am proud of.</p>
+                <a href="https://github.com/ryannduma" target="_blank">View more on GitHub →</a>
+            </div>
+        </section>
+
+        <!-- Community & Volunteer Work -->
+        <section class="content-section">
+            <h2 class="section-title">Community & Volunteer Work</h2>
+            <ul class="simple-list">
+                <li>
+                    <div>
+                        <div class="list-title">
+                            <a href="https://fonnap.org/" target="_blank">Friends of Nairobi National Park (FONNAP)</a>
+                        </div>
+                        <div class="list-description">Human & Wildlife Committee Youth Representative - Conservation</div>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <div class="list-title">
+                            <a href="https://kiwimbi.org/what-we-do/" target="_blank">Kiwimbi Community Centre</a>
+                        </div>
+                        <div class="list-description">Volunteer Teaching Assistant</div>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <div class="list-title">
+                            <a href="https://cityharvest.org.uk/" target="_blank">City Harvest UK</a>
+                        </div>
+                        <div class="list-description">Volunteer Warehouse Team Member</div>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Writing -->
+        <section id="writing" class="content-section">
+            <h2 class="section-title">Writing</h2>
+            <div class="text-content">
+                <p>For half a decade, I've been spilling my thoughts across the digital cosmos (or as my mom calls it, "that blog thing you do").</p>
+                <p>While it all began with <a href="https://ryanssparky.science.blog/2019/08/19/welcome-to-my-blog/" target="_blank">a powerful urge to create scientific awareness across the board</a> – it has beautifully morphed into something far more personal.</p>
+                <p>Today, my little Substack, Ry's Meta, serves as my digital diary, creative playground, and intellectual sandbox - because in a way it helps me obtain a <a href="https://paulgraham.com/writes.html" target="_blank">clarity of thinking</a> that I'm learning can sometimes only come about by writing.</p>
+            </div>
+            <ul class="simple-list">
+                <li>
+                    <div class="list-title">
+                        <a href="https://rynduma.substack.com/" target="_blank">Ry's Meta</a>
+                    </div>
+                    <div class="list-description">Personal Substack</div>
+                </li>
+                <li>
+                    <div class="list-title">
+                        <a href="https://ryanssparky.science.blog/" target="_blank">Science Blog</a>
+                    </div>
+                    <div class="list-description">Scientific awareness & exploration</div>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="content-section">
+            <h2 class="section-title">Contact</h2>
+            <div class="text-content">
+                <p>This site is open 24 hours a day, 7 days a week. Thanks for visiting!</p>
+                <p>Oh! Before I go, here's a <a href="https://open.spotify.com/playlist/42epj1NiKUdhchfb8qcDOq?si=LqiKr6DARLuQ4phHsSTP-g&pi=e-2aoTpORQTumk" target="_blank">playlist</a> you might enjoy!</p>
+            </div>
+            <div class="contact-links">
+                <a href="https://www.linkedin.com/in/rynduma/" target="_blank">LinkedIn</a>
+                <a href="https://github.com/ryannduma" target="_blank">GitHub</a>
+                <a href="https://x.com/rynduma" target="_blank">Twitter</a>
+                <a href="mailto:contact@rynduma.com">Email</a>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>updated 8th Feb 2025 - CC rynduma</p>
+            <p><a href="https://open.spotify.com/playlist/42epj1NiKUdhchfb8qcDOq?si=LqiKr6DARLuQ4phHsSTP-g&pi=e-2aoTpORQTumk" target="_blank">"Everything is a Learnable Skill"</a></p>
+        </footer>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
